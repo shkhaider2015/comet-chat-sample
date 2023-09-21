@@ -69,7 +69,10 @@ function App() {
 
   console.log("User ", cometChatUser);
 
-  return <div className="App">{cometChatUser && <ChatScreen1 />}</div>;
+  return <div className="App">
+    <h1>CometChat Sample App</h1>
+    {cometChatUser && <ChatScreen1 />}
+    </div>;
 }
 
 export default App;
