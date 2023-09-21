@@ -1,0 +1,115 @@
+.chat-container {
+    // border: 1px solid orange;
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+}
+
+// * * * * * * * * *    S I D E B A R    * * * * * * * * *
+.chat-container .chat-sidebar {
+    // border: 1px solid red;
+    min-height: 100%;
+    width: 370px;
+}
+
+.chat-container .chat-sidebar .comet-comp {
+    // background-color: rgba(255, 0, 0, 0.281);
+    width: 100%;
+    min-height: calc(100% - 80px);
+}
+
+.chat-container .chat-sidebar .chat-tabs {
+    background-color: #fff;
+    width: 100%;
+    min-height: 60px;
+
+    .ant-segmented.chat-segmented {
+        width: 100%;
+        background-color: none;
+
+        .ant-segmented-group .ant-segmented-item {
+            width: 33%;
+        }
+
+        .ant-segmented-group .ant-segmented-item.ant-segmented-item-selected .ant-segmented-item-label {
+            color: @primary-color;
+            font-weight: bold;
+        }
+    }
+}
+
+.chat-container .chat-sidebar .comet-comp .cc-users {
+    height: calc(100vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+.chat-container .chat-sidebar .comet-comp .cc-groups {
+    height: calc(100vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+.chat-container .chat-sidebar .comet-comp .cc-conversations {
+    height: calc(100vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+// [ S ]   [ A ]   [ F ]   [ A ]   [ R ]   [ I ]
+
+.chat-container.safari .chat-sidebar .comet-comp .cc-users {
+    height: calc(90vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+.chat-container.safari .chat-sidebar .comet-comp .cc-groups {
+    height: calc(90vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+.chat-container.safari .chat-sidebar .comet-comp .cc-conversations {
+    height: calc(90vh - 60px) !important;
+    border: 1px solid rgba(20, 20, 20, 0.33) !important;
+    border-top-left-radius: 20px !important;
+}
+
+.group-menu-icon-con {
+    // border: 1px solid red;
+    opacity: .6;
+
+    .icon {
+        font-size: 26px;
+        // opacity: .6;
+    }
+
+    :hover {
+        color: @primary-color;
+
+    }
+}
+
+
+// * * * * * * * * *    M A I N    * * * * * * * * *
+.chat-container .chat-main {
+    // border: 1px solid blue;
+    width: calc(100% - 370px);
+    border: 1px solid rgba(20, 20, 20, 0.33);
+}
+
+
+.chat-container .chat-main .cc-messages-wrapper .cc-messages .cc-messages__list .cc-message-list__wrapper  {
+    max-height: 84vh;
+}
+
+.chat-container.safari .chat-main .cc-messages-wrapper .cc-messages .cc-messages__list .cc-message-list__wrapper  {
+    max-height: 84vh;
+}
+
+
+.cc-conversations-with-messages__wrapper {
+    height: 70vh !important;
+} 
+.cc-conversations-with-messages__sidear {}
